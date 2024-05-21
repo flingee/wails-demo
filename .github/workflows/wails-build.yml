@@ -21,4 +21,4 @@ jobs:
         with:
           build-name: ${{ matrix.build.name }}
           build-platform: ${{ matrix.build.platform }}
-          package: false
+          package: true
