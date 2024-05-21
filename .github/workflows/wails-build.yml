@@ -18,6 +18,8 @@ jobs:
         with:
           submodules: recursive
       - uses: dAppServer/wails-build-action@v2.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           build-name: ${{ matrix.build.name }}
           build-platform: ${{ matrix.build.platform }}
